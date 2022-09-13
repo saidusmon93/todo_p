@@ -41,7 +41,6 @@ if (isset($_GET['id'])) {
         <?php
         if (!empty($_POST['text'])) {  // isset — Проверяет, установлен ли переменной значение
             echo  $file->write($_POST['text']); // Записывает в файл
-            debug($file->read());
         }
         ?>
         <hr>
